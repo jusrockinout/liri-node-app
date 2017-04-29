@@ -63,17 +63,17 @@ function spotifySong(param){
 			return;
 			} //Closes if statement 
 			else {
-				var logString = "";
+				// var logString = "";
 				if(data.tracks.items.length > 0){
-					logString += "Artist name: " + data.tracks.items[0].artists[0].name + "\n";
+					// logString += "Artist name: " + data.tracks.items[0].artists[0].name + "\n";
 					console.log("Artist name: " + data.tracks.items[0].artists[0].name);
-					logString += "Song: " + data.tracks.items[0].name + "\n";
+					// logString += "Song: " + data.tracks.items[0].name + "\n";
 					console.log("Song: " + data.tracks.items[0].name);
-					logString += "Song: " + data.tracks.items[0].name + "\n";
+					// logString += "Song: " + data.tracks.items[0].name + "\n";
 					console.log("Link: " + data.tracks.items[0].external_urls.spotify);
 					console.log("Album: " + data.tracks.items[0].album.name);
 				} //Closes if statement for data.tracks.items.length
-				appendLog(logString);
+				// appendLog(logString);
 			} //Closes else statement
 		}); //Closes out spotify.search 
 	}//Closes out spotifySong function 
